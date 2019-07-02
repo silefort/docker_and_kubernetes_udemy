@@ -21,4 +21,8 @@
 
 # Build containers
 
-    $ docker build -f Dockerfile.dev -t .
+    $ docker build -f Dockerfile.dev -t dev .
+
+# Run dev container
+
+    $ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app dev # /app/node_modules make sure that /app/node_modules can't be changed from outside of the container
