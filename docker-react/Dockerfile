@@ -1,9 +1,9 @@
 FROM node:alpine as builder
 
 WORKDIR '/app'
-COPY package.json .
+COPY docker-react/package.json .
 RUN npm install
-COPY . .
+COPY docker-react .
 RUN npm run build
 
 FROM nginx
