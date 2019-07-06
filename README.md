@@ -65,4 +65,23 @@ This container will have the necessary files (html, js) + a Dev webServer to ser
 [ Tell Travis how to run our test suite ]
 [ Tell Travis how to deploy our code to AWS ]
 
+# Use Elastic Beanstalk
 
+
+```
+[     Load Balancer    ]
+[----------------------]
+[   VM Running Docker  ]
+[                      ]
+[ [------------------] ]
+[ [ Docker Container ] ]
+[ [                  ] ]
+[ [ [-------------]  ] ]
+[ [ [  Deployment ]  ] ]
+[ [ [-------------]  ] ]
+[ [                  ] ]
+[ [------------------] ]
+[                      ]
+[                      ]
+[----------------------]
+```
