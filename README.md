@@ -56,3 +56,13 @@ This container will have the necessary files (html, js) + a Dev webServer to ser
 # Run Production container
 
     $ docker run -p 8080:80 production
+
+# User Travis CI
+
+```
+[ Tell travis we need a copy of docker running ]
+[ Build our imageusing Dockerfile.dev ]
+[ Tell Travis how to run our test suite ]
+[ Tell Travis how to deploy our code to AWS ]
+
+
