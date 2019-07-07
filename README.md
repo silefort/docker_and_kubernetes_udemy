@@ -64,8 +64,11 @@ This container will have the necessary files (html, js) + a Dev webServer to ser
 [ Build our imageusing Dockerfile.dev ]
 [ Tell Travis how to run our test suite ]
 [ Tell Travis how to deploy our code to AWS ]
+```
 
 # Use Elastic Beanstalk
+
+Elastic Beanstalk uses what has been uploaded on an S3 bucket to build and run a container
 
 
 ```
@@ -85,3 +88,14 @@ This container will have the necessary files (html, js) + a Dev webServer to ser
 [                      ]
 [----------------------]
 ```
+
+# The Fibonnaci Sequence
+
+1 1 2 3 5 8 13 21 
+
+n=(n-2)+(n-1)
+
+The Postgres Database will be used to show "permanent" data
+The Redis will be used to show "temporary" data
+
+
